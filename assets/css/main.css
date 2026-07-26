@@ -10101,4 +10101,351 @@ body.tw-magic-cursor #magic-cursor {
   }
 }
 
+.glass-portfolio {
+  --glass-bg: linear-gradient(135deg, rgba(255, 255, 255, 0.34), rgba(255, 255, 255, 0.12));
+  --glass-bg-strong: linear-gradient(135deg, rgba(255, 255, 255, 0.44), rgba(255, 255, 255, 0.16));
+  --glass-dark: linear-gradient(145deg, rgba(7, 10, 20, 0.72), rgba(20, 25, 40, 0.38));
+  --glass-border: rgba(255, 255, 255, 0.34);
+  --glass-shadow: 0 24px 60px rgba(15, 23, 42, 0.14);
+  background:
+    radial-gradient(circle at 20% 20%, rgba(255, 118, 64, 0.22), transparent 28%),
+    radial-gradient(circle at 82% 18%, rgba(255, 255, 255, 0.75), transparent 24%),
+    radial-gradient(circle at 50% 70%, rgba(255, 153, 71, 0.12), transparent 26%),
+    linear-gradient(180deg, #eef4fb 0%, #edf2f7 34%, #dfe6ef 100%);
+  background-attachment: fixed;
+}
+.glass-portfolio::before {
+  content: "";
+  position: fixed;
+  inset: 0;
+  pointer-events: none;
+  background-image:
+    linear-gradient(rgba(255, 255, 255, 0.08) 1px, transparent 1px),
+    linear-gradient(90deg, rgba(255, 255, 255, 0.08) 1px, transparent 1px);
+  background-size: 160px 160px;
+  mask-image: radial-gradient(circle at center, black 45%, transparent 100%);
+  opacity: 0.55;
+  z-index: 0;
+}
+.glass-portfolio #smooth-wrapper,
+.glass-portfolio #smooth-content {
+  position: relative;
+  z-index: 1;
+}
+.glass-portfolio .header-three,
+.glass-portfolio .banner-three-area,
+.glass-portfolio .about-three-area,
+.glass-portfolio .portfolio-three-area,
+.glass-portfolio .testimonial-three-area,
+.glass-portfolio .footer-three-area {
+  background: transparent;
+}
+.glass-portfolio .service-three-area,
+.glass-portfolio .feature-three-area,
+.glass-portfolio .marquee {
+  background:
+    linear-gradient(180deg, rgba(8, 11, 21, 0.9), rgba(12, 16, 28, 0.82));
+}
+.glass-portfolio .header-three-logo,
+.glass-portfolio .header-three-social ul li a,
+.glass-portfolio .header-three-menu button,
+.glass-portfolio .header-three-button a,
+.glass-portfolio .banner-three-left,
+.glass-portfolio .banner-three-right,
+.glass-portfolio .banner-three-counter-item,
+.glass-portfolio .about-three-thumb,
+.glass-portfolio .portfolio-three-item,
+.glass-portfolio .testimonial-three-wrapper,
+.glass-portfolio .footer-three-top-info,
+.glass-portfolio .footer-three-form,
+.glass-portfolio .back-to-top-btn,
+.glass-portfolio .tw-offcanvas-2-wrapper,
+.glass-portfolio .tw-offcanvas-2-left,
+.glass-portfolio .tw-offcanvas-2-right {
+  background: var(--glass-bg) !important;
+  border: 1px solid var(--glass-border);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: blur(24px);
+  backdrop-filter: blur(24px);
+}
+.glass-portfolio .header-three {
+  padding-block: 22px;
+}
+.glass-portfolio .header-three nav {
+  padding: 16px 18px;
+  border-radius: 28px;
+  background: rgba(255, 255, 255, 0.2);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  box-shadow: 0 20px 44px rgba(15, 23, 42, 0.1);
+  -webkit-backdrop-filter: blur(28px);
+  backdrop-filter: blur(28px);
+}
+.glass-portfolio .header-three-logo {
+  background: var(--glass-bg-strong) !important;
+  box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
+}
+.glass-portfolio .xblade-brand-btn {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.28));
+  border-color: rgba(255, 255, 255, 0.5);
+  color: #0f172a;
+  box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+}
+.glass-portfolio .header-three-social ul li a,
+.glass-portfolio .header-three-menu button {
+  background: rgba(255, 255, 255, 0.32) !important;
+  color: #0f172a;
+}
+.glass-portfolio .header-three-social ul li a:hover,
+.glass-portfolio .header-three-menu button:hover,
+.glass-portfolio .header-three-button a:hover,
+.glass-portfolio .banner-three-button a:hover {
+  background: linear-gradient(135deg, rgba(255, 104, 39, 0.9), rgba(255, 140, 72, 0.72)) !important;
+  color: #fff !important;
+  border-color: rgba(255, 166, 127, 0.55);
+}
+.glass-portfolio .header-three-button,
+.glass-portfolio .banner-three-button {
+  margin-block-end: 0;
+}
+.glass-portfolio .header-three-button a,
+.glass-portfolio .banner-three-button a {
+  background: linear-gradient(135deg, rgba(7, 10, 20, 0.76), rgba(7, 10, 20, 0.5)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 16px 34px rgba(15, 23, 42, 0.2);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.glass-portfolio .banner-three-area {
+  position: relative;
+  padding-block: 210px 130px;
+}
+.glass-portfolio .banner-three-area::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  background:
+    radial-gradient(circle at 50% 38%, rgba(255, 138, 76, 0.2), transparent 20%),
+    linear-gradient(180deg, rgba(255, 255, 255, 0.12), transparent 48%);
+  pointer-events: none;
+}
+.glass-portfolio .banner-three-title {
+  color: rgba(12, 18, 34, 0.8) !important;
+  text-shadow: 0 12px 28px rgba(255, 255, 255, 0.36);
+}
+.glass-portfolio .banner-three-center-title {
+  color: rgba(255, 255, 255, 0.22);
+  -webkit-text-stroke-color: rgba(14, 20, 36, 0.72);
+}
+.glass-portfolio .banner-three-left,
+.glass-portfolio .banner-three-right {
+  border-radius: 32px !important;
+}
+.glass-portfolio .banner-three-left {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.16)) !important;
+}
+.glass-portfolio .banner-three-right {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.14)) !important;
+}
+.glass-portfolio .banner-three-counter-item {
+  border-radius: 24px !important;
+}
+.glass-portfolio .banner-three-counter-item:nth-child(2) {
+  background: var(--glass-dark) !important;
+  border-color: rgba(255, 255, 255, 0.12);
+}
+.glass-portfolio .banner-three-counter-item:nth-child(3) {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.3), rgba(255, 255, 255, 0.18)) !important;
+}
+.glass-portfolio .banner-three-carcel-shape,
+.glass-portfolio .about-three-counter .tw-btn-circle {
+  background: var(--glass-bg-strong);
+  border: 1px solid rgba(255, 255, 255, 0.36);
+  box-shadow: var(--glass-shadow);
+  -webkit-backdrop-filter: blur(26px);
+  backdrop-filter: blur(26px);
+}
+.glass-portfolio .about-three-thumb img,
+.glass-portfolio .testimonial-three-thumb img,
+.glass-portfolio .footer-three-top-thumb img {
+  filter: saturate(1.05) contrast(1.02);
+}
+.glass-portfolio .about-three-counter .tw-btn-circle {
+  fill: rgba(255, 116, 46, 0.88);
+}
+.glass-portfolio .about-three-counter .tw-btn-circle-dot {
+  background: radial-gradient(circle, rgba(255, 255, 255, 0.62) 0%, rgba(255, 116, 46, 0.22) 72%);
+}
+.glass-portfolio .about-three-wrap-shape .banner-three-counter-item {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.42), rgba(255, 255, 255, 0.18)) !important;
+}
+.glass-portfolio .marquee {
+  border-top: 1px solid rgba(255, 255, 255, 0.08);
+  border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+}
+.glass-portfolio .service-three-single,
+.glass-portfolio .feature-three-single {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.09), rgba(255, 255, 255, 0.03));
+  border: 1px solid rgba(255, 255, 255, 0.14);
+  box-shadow: 0 22px 48px rgba(0, 0, 0, 0.24);
+  -webkit-backdrop-filter: blur(20px);
+  backdrop-filter: blur(20px);
+}
+.glass-portfolio .service-three-single:hover,
+.glass-portfolio .feature-three-single:hover,
+.glass-portfolio .feature-three-single.current {
+  border-color: rgba(255, 116, 46, 0.72);
+  background: linear-gradient(145deg, rgba(255, 116, 46, 0.18), rgba(255, 255, 255, 0.06));
+  transform: translateY(-4px);
+}
+.glass-portfolio .service-three-thumb img {
+  filter: drop-shadow(0 20px 30px rgba(0, 0, 0, 0.22));
+}
+.glass-portfolio .portfolio-three-item {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.16)) !important;
+  border-radius: 36px !important;
+}
+.glass-portfolio .testimonial-three-wrapper {
+  background: linear-gradient(145deg, rgba(255, 255, 255, 0.38), rgba(255, 255, 255, 0.16)) !important;
+}
+.glass-portfolio .testimonial-three-btn,
+.glass-portfolio .footer-three-back-to-top {
+  background: linear-gradient(135deg, rgba(255, 255, 255, 0.88), rgba(255, 255, 255, 0.44)) !important;
+  border: 1px solid rgba(255, 255, 255, 0.45);
+  box-shadow: 0 20px 40px rgba(15, 23, 42, 0.18);
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+.glass-portfolio .footer-three-area {
+  padding-block-start: 40px;
+}
+.glass-portfolio .footer-three-form input,
+.glass-portfolio .footer-three-form textarea {
+  background: rgba(255, 255, 255, 0.18);
+  border: 1px solid rgba(255, 255, 255, 0.28);
+  color: #0f172a;
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+.glass-portfolio .footer-three-form input::placeholder,
+.glass-portfolio .footer-three-form textarea::placeholder {
+  color: rgba(15, 23, 42, 0.6);
+}
+.glass-portfolio .back-to-top-btn {
+  color: #0f172a;
+}
+.glass-portfolio .portfolio-three-shape-title,
+.glass-portfolio .footer-three-bottom-title {
+  color: rgba(255, 255, 255, 0.18);
+  -webkit-text-stroke: 1px rgba(15, 23, 42, 0.4);
+}
+.glass-portfolio .about-three-shape,
+.glass-portfolio .banner-three-line-shape {
+  opacity: 0.45;
+}
+.glass-portfolio .tw-offcanvas-2-area {
+  position: fixed;
+  inset: 0;
+  visibility: hidden;
+  opacity: 0;
+  pointer-events: none;
+}
+.glass-portfolio .tw-offcanvas-2-area.opened {
+  visibility: visible;
+  opacity: 1;
+  pointer-events: auto;
+}
+.glass-portfolio .tw-offcanvas-2-wrapper {
+  position: fixed;
+  inset: 0;
+  z-index: 12000;
+  visibility: hidden;
+  opacity: 0;
+}
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-offcanvas-2-wrapper,
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-offcanvas-2-left,
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-offcanvas-2-right,
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-offcanvas-2-close,
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-main-menu-mobile,
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-offcanvas__logo,
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-offcanvas__right-info,
+.glass-portfolio .tw-offcanvas-2-area.opened .tw-offcanvas__social-link {
+  visibility: visible !important;
+  opacity: 1 !important;
+  transform: none !important;
+}
+.glass-portfolio .tw-offcanvas-2-left,
+.glass-portfolio .tw-offcanvas-2-right {
+  z-index: 12001;
+}
+.glass-portfolio .tw-offcanvas-2-left {
+  background: linear-gradient(145deg, rgba(7, 10, 20, 0.78), rgba(23, 30, 49, 0.58)) !important;
+}
+.glass-portfolio .tw-offcanvas-2-right {
+  background: linear-gradient(145deg, rgba(18, 18, 18, 0.82), rgba(44, 40, 40, 0.54)) !important;
+}
+.glass-portfolio .tw-offcanvas-2-left-wrap {
+  position: sticky;
+  top: 0;
+  z-index: 2;
+  background: linear-gradient(180deg, rgba(9, 13, 24, 0.92), rgba(9, 13, 24, 0.68));
+  -webkit-backdrop-filter: blur(18px);
+  backdrop-filter: blur(18px);
+}
+.glass-portfolio .tw-main-menu-mobile {
+  position: relative;
+  z-index: 1;
+}
+.glass-portfolio .tw-main-menu-mobile > nav,
+.glass-portfolio .tw-main-menu-mobile > nav > ul {
+  display: block !important;
+}
+.glass-portfolio .tw-main-menu-mobile > nav > ul > li > a,
+.glass-portfolio .tw-main-menu-mobile > nav > ul > li ul li a,
+.glass-portfolio .tw-offcanvas-2-close-btn,
+.glass-portfolio .twoffcanvas__contact-info ul li,
+.glass-portfolio .twoffcanvas__contact-info ul li a,
+.glass-portfolio .footer-social ul li a {
+  color: #ffffff !important;
+}
+.glass-portfolio .tw-main-menu-mobile > nav > ul > li > a {
+  text-shadow: 0 8px 18px rgba(0, 0, 0, 0.24);
+}
+.glass-portfolio .tw-offcanvas-2-area .dropdown-toggle-btn {
+  border-color: rgba(255, 255, 255, 0.18) !important;
+}
+@media screen and (max-width: 1199px) {
+  .glass-portfolio .header-three nav {
+    border-radius: 22px;
+  }
+  .glass-portfolio .banner-three-area {
+    padding-block: 180px 100px;
+  }
+  .glass-portfolio .about-three-wrap-shape {
+    position: static;
+    margin-block-start: 30px;
+    gap: 20px;
+  }
+}
+@media screen and (max-width: 767px) {
+  .glass-portfolio .header-three {
+    padding-block: 14px;
+  }
+  .glass-portfolio .header-three nav {
+    padding: 12px;
+    border-radius: 18px;
+  }
+  .glass-portfolio .banner-three-left,
+  .glass-portfolio .banner-three-right,
+  .glass-portfolio .portfolio-three-item,
+  .glass-portfolio .testimonial-three-wrapper,
+  .glass-portfolio .footer-three-top-info,
+  .glass-portfolio .footer-three-form {
+    border-radius: 24px !important;
+  }
+  .glass-portfolio .service-three-single {
+    padding: 28px 22px;
+    border-radius: 34px;
+  }
+}
+
 /*# sourceMappingURL=main.css.map */
