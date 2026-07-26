@@ -9486,12 +9486,32 @@ body.tw-magic-cursor #magic-cursor {
     font-size: 2.4rem;
   }
 }
+.testimonial-three-grid {
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 24px;
+}
+@media screen and (max-width: 1199px) {
+  .testimonial-three-grid {
+    grid-template-columns: 1fr;
+  }
+}
 .testimonial-three-wrapper {
   background: #f5f5f5;
   box-shadow:
     0 4px 4px 0 rgba(0, 0, 0, 0.25),
     -4px -4px 0 0 rgba(255, 255, 255, 0.25);
   padding: 15px;
+  transition:
+    transform 0.35s ease,
+    box-shadow 0.35s ease,
+    background-color 0.35s ease;
+}
+.testimonial-three-wrapper:hover {
+  transform: translateY(-8px);
+  box-shadow:
+    0 18px 40px rgba(0, 0, 0, 0.12),
+    -4px -4px 0 0 rgba(255, 255, 255, 0.25);
 }
 @media screen and (max-width: 767px) {
   .testimonial-three-wrapper {
@@ -9501,6 +9521,11 @@ body.tw-magic-cursor #magic-cursor {
 .testimonial-three-thumb {
   max-width: 360px;
   width: 100%;
+}
+.testimonial-three-thumb img {
+  aspect-ratio: 3/4;
+  object-fit: cover;
+  object-position: center top;
 }
 @media screen and (max-width: 1399px) {
   .testimonial-three-thumb {
@@ -10169,11 +10194,11 @@ body.tw-magic-cursor #magic-cursor {
   backdrop-filter: blur(24px);
 }
 .glass-portfolio .header-three {
-  padding-block: 22px;
+  padding-block: 14px;
 }
 .glass-portfolio .header-three nav {
-  padding: 16px 18px;
-  border-radius: 28px;
+  padding: 10px 16px;
+  border-radius: 24px;
   background: rgba(255, 255, 255, 0.2);
   border: 1px solid rgba(255, 255, 255, 0.28);
   box-shadow: 0 20px 44px rgba(15, 23, 42, 0.1);
@@ -10185,13 +10210,18 @@ body.tw-magic-cursor #magic-cursor {
   box-shadow: 0 18px 36px rgba(15, 23, 42, 0.12);
 }
 .glass-portfolio .xblade-brand-btn {
+  min-height: 48px;
+  padding: 10px 24px;
   background: linear-gradient(135deg, rgba(255, 255, 255, 0.6), rgba(255, 255, 255, 0.28));
   border-color: rgba(255, 255, 255, 0.5);
   color: #0f172a;
   box-shadow: inset 0 1px 0 rgba(255, 255, 255, 0.8);
+  font-size: 24px;
 }
 .glass-portfolio .header-three-social ul li a,
 .glass-portfolio .header-three-menu button {
+  width: 52px;
+  height: 52px;
   background: rgba(255, 255, 255, 0.32) !important;
   color: #0f172a;
 }
@@ -10214,6 +10244,9 @@ body.tw-magic-cursor #magic-cursor {
   box-shadow: 0 16px 34px rgba(15, 23, 42, 0.2);
   -webkit-backdrop-filter: blur(20px);
   backdrop-filter: blur(20px);
+}
+.glass-portfolio .header-three-button a {
+  padding: 14px 30px !important;
 }
 .glass-portfolio .banner-three-area {
   position: relative;
@@ -10428,11 +10461,11 @@ body.tw-magic-cursor #magic-cursor {
 }
 @media screen and (max-width: 767px) {
   .glass-portfolio .header-three {
-    padding-block: 14px;
+    padding-block: 10px;
   }
   .glass-portfolio .header-three nav {
-    padding: 12px;
-    border-radius: 18px;
+    padding: 10px 12px;
+    border-radius: 16px;
   }
   .glass-portfolio .banner-three-left,
   .glass-portfolio .banner-three-right,
@@ -10446,6 +10479,43 @@ body.tw-magic-cursor #magic-cursor {
     padding: 28px 22px;
     border-radius: 34px;
   }
+}
+
+.glass-portfolio .footer-three-area {
+  background: #080b15 !important;
+}
+.glass-portfolio .footer-three-top-info {
+  background: rgba(255, 255, 255, 0.06) !important;
+  border: 1px solid rgba(255, 255, 255, 0.1) !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.glass-portfolio .footer-three-form {
+  background: transparent !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.glass-portfolio .footer-three-form input,
+.glass-portfolio .footer-three-form textarea {
+  background: rgba(255, 255, 255, 0.08) !important;
+  border: 1px solid rgba(255, 255, 255, 0.15) !important;
+  color: #fff !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
+}
+.glass-portfolio .footer-three-form input::placeholder,
+.glass-portfolio .footer-three-form textarea::placeholder {
+  color: rgba(255, 255, 255, 0.5) !important;
+}
+.glass-portfolio .footer-three-back-to-top {
+  background: var(--main-two-600, #6c5ce7) !important;
+  border: none !important;
+  box-shadow: none !important;
+  -webkit-backdrop-filter: none !important;
+  backdrop-filter: none !important;
 }
 
 /*# sourceMappingURL=main.css.map */
