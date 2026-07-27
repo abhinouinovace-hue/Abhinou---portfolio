@@ -9276,6 +9276,32 @@ body.tw-magic-cursor #magic-cursor {
 .service-three-number img {
   filter: brightness(0) invert(1);
 }
+.service-three-thumb {
+  flex: 0 0 clamp(260px, 36vw, 720px);
+  max-width: clamp(260px, 36vw, 720px);
+}
+.service-three-thumb a {
+  display: block;
+  width: 100%;
+}
+.service-three-thumb img {
+  display: block;
+  width: 100%;
+  height: clamp(140px, 17vw, 240px);
+  object-fit: cover;
+  object-position: center;
+}
+@media screen and (max-width: 991px) {
+  .service-three-thumb {
+    flex-basis: min(100%, 560px);
+    max-width: min(100%, 560px);
+  }
+}
+@media screen and (max-width: 767px) {
+  .service-three-thumb img {
+    height: auto;
+  }
+}
 @media screen and (max-width: 1199px) {
   .service-three-title {
     font-size: 2.6rem;
